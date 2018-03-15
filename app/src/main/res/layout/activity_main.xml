@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#38a0ef"
+    android:id="@+id/layout">
+
+    <View
+        android:id="@+id/viewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/udacity_is_looking_good"
+        android:layout_below="@+id/viewLayout"
+        android:scaleX="1.6"
+        android:scaleY="1.6" />
+
+    <TextView
+        android:id="@+id/udacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-light"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#000000"
+
+        android:text="Udacity"/>
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/udacity"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-light"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:text="2465 Latham St, Mountain View, CA 94043"
+        android:textColorLink="#f1f2b1"
+        android:autoLink="map">
+    </TextView>
+
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:layout_below="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-light"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:text="650-555-5555"
+        android:textColorLink="#f1f2b1"
+        android:autoLink="phone">
+    </TextView>
+
+    <TextView
+        android:id="@+id/url"
+        android:layout_below="@+id/phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-light"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:text="www.udacity.com"
+        android:textColorLink="#f1f2b1"
+        android:autoLink="web">
+    </TextView>
+
+
+
+
+
+
+</RelativeLayout>
